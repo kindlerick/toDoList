@@ -29,13 +29,12 @@
          */
         
         static fromPlainObject(plainObject) {
-            // ⭐ CHANGE 2: Pass the loaded 'id' (and 'title') to the constructor ⭐
-            // This ensures the new Project instance gets the existing ID from localStorage
+
             const project = new Project({
                 id: plainObject.id,
                 title: plainObject.title
             });
-            // Re-hydrate each note within the project's notes array
+            
             project.notes = plainObject.notes.map(noteData => Note.fromPlainObject(noteData));
             return project;
         }
