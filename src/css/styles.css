@@ -1,0 +1,210 @@
+body {
+    background-color: #e8f2ff;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    width: 12vh;
+    height: auto;
+}
+
+.noteContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    width: 75vh;
+    height: auto;
+}
+
+#container {
+    margin: 2vh;
+    display: flex;
+    gap: 2vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+input,
+textarea,
+select {
+    font-size: 1rem;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #666;
+    outline: none;
+}
+
+button:hover,
+.createNote:hover,
+.showButton:hover,
+.editButtonEnabled:hover
+.editButtonDisabled:hover {
+    background-color: #5c5c5c;
+}
+
+.projectInput {
+    height: 5vh;
+    flex-grow: 0;
+    color: rgb(197, 197, 197);
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.projectInput:hover {
+    cursor: text;
+}
+
+#projectTable {
+    gap: 2vh;
+    flex-direction: column;
+    padding: 24px;
+    display: flex;
+    width: 73vh;
+    height: 20vh;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #cecece;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+.noteTable {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    flex-grow: 1;
+    padding: 15px;
+    width: 55vh;
+    border-radius: 12px;
+    background-color: #f9faf7;
+    border: 1px solid #cecece;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.noteTableTop,
+.noteTableBottom {
+    display: flex;
+    align-items: center;
+}
+
+.noteTableTop {
+    justify-content: space-between;
+}
+
+.noteTableBottom {
+    justify-content: space-between;
+    margin-top: 4vh;
+}
+
+.noteTableBottom > .dueDateInput {
+    margin-left: 1vh;
+}
+
+.noteTableContent {
+    flex-grow: 1;
+    margin-top: 2vh;
+    display: flex;
+    margin-bottom: 2vh;
+}
+
+#createProject,
+#createNote {
+    width: 20vh;
+    height: 5vh;
+    border-radius: 2vh;
+    border: 1px solid grey;
+    flex-shrink: 0;
+}
+
+#buttonStrip {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectInput:focus,
+.titleInput:focus,
+.descriptionInput:focus,
+.duedateInput:focus,
+.priorityInput:focus {
+    color: rgb(104, 104, 104);
+    outline: none;
+}
+
+.titleInput,
+.descriptionInput,
+.duedateInput,
+.priorityInput {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titleInput {
+    align-self: center;
+    font-size: larger;
+    margin-left: 1vh;
+}
+
+.descriptionInput {
+    resize: vertical;
+    width: 47vh;
+    margin-left: 1vh;
+}
+
+.duedateInput {
+    margin-left: 1vh;
+}
+
+.priorityInput {
+    margin-right: 3vh;
+}
+
+.completedInput {
+    margin-left: 3vh;
+    width: 2vh;
+    height: 2vh;
+}
+
+
+.showButton,
+.editButton,
+.saveButton,
+.deleteButton {
+    margin: 1vh;
+    min-width: 5vh;
+    max-width: 10vh;
+}
+
+
+.projectSaveButton {
+    width: 17vh;
+}
+
+button,
+#createNote,
+.showButton,
+.editButton,
+.saveButton,
+.deleteButton,
+.projectSaveButton {
+    background-color: #a0a0a0;
+    color: rgb(255, 255, 255);
+    border: 1px solid #cecece;
+    padding: 1vh 2vh;
+    border-radius: 4vh;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
